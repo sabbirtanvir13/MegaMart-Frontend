@@ -1,0 +1,53 @@
+[
+  {
+    "continent": "Asia",
+    "countries": [
+      {
+        "name": "Bangladesh",
+        "states": ["Dhaka", "Chattogram", "Khulna", "Rajshahi", "Sylhet", "Barishal", "Rangpur", "Mymensingh"]
+      },
+      { "name": "India", "states": ["Delhi", "Maharashtra", "Karnataka", "Tamil Nadu", "West Bengal"] },
+      { "name": "China", "states": ["Beijing", "Shanghai", "Guangdong", "Sichuan", "Yunnan"] },
+      { "name": "Japan", "states": ["Tokyo", "Osaka", "Kyoto", "Hokkaido"] }
+    ]
+  },
+  {
+    "continent": "Europe",
+    "countries": [
+      { "name": "United Kingdom", "states": ["England", "Scotland", "Wales", "Northern Ireland"] },
+      { "name": "Germany", "states": ["Bavaria", "Berlin", "Hamburg", "Hesse"] },
+      { "name": "France", "states": ["Île-de-France", "Provence-Alpes-Côte d'Azur", "Occitanie"] }
+    ]
+  },
+  {
+    "continent": "North America",
+    "countries": [
+      { "name": "United States", "states": ["California", "Texas", "New York", "Florida"] },
+      { "name": "Canada", "states": ["Ontario", "Quebec", "British Columbia", "Alberta"] },
+      { "name": "Mexico", "states": ["Chihuahua", "Jalisco", "Mexico City", "Yucatán"] }
+    ]
+  },
+  {
+    "continent": "South America",
+    "countries": [
+      { "name": "Brazil", "states": ["São Paulo", "Rio de Janeiro", "Bahia"] },
+      { "name": "Argentina", "states": ["Buenos Aires", "Córdoba", "Santa Fe"] },
+      { "name": "Chile", "states": ["Santiago", "Valparaíso", "Concepción"] }
+    ]
+  },
+  {
+    "continent": "Africa",
+    "countries": [
+      { "name": "Nigeria", "states": ["Lagos", "Kano", "Rivers"] },
+      { "name": "South Africa", "states": ["Gauteng", "Western Cape", "KwaZulu-Natal"] },
+      { "name": "Egypt", "states": ["Cairo", "Alexandria", "Giza"] }
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "countries": [
+      { "name": "Australia", "states": ["New South Wales", "Victoria", "Queensland"] },
+      { "name": "New Zealand", "states": ["Auckland", "Wellington", "Canterbury"] }
+    ]
+  }
+]
