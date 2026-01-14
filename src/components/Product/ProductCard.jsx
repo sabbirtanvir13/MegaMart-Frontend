@@ -58,16 +58,17 @@ const ProductCard = () => {
         {/* Add to Cart Button (MUI) */}
         <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Button 
+          className=''
             variant="contained" 
             fullWidth 
             sx={{ 
-              backgroundColor: '#2b3e9a', 
+              backgroundColor: ' #43A047', 
               textTransform: 'none',
               borderRadius: '30px',
               fontSize: '13px',
               fontWeight: '600',
               padding: '8px 0',
-              '&:hover': { backgroundColor: '#1a237e' }
+              '&:hover': { backgroundColor: '#43A047' }
             }}
           >
             Add to cart

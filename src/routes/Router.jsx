@@ -48,6 +48,7 @@ import Login from "../Auth/login/Login";
 import Register from "../Auth/register/Register";
 import Coverage from "../pages/Coverage/Coverage";
 import AddProductForm from "../Form/AddProductForm";
+import Shop from "../components/Shop/Shop";
 
 
 export const router = createBrowserRouter([
@@ -71,6 +72,11 @@ export const router = createBrowserRouter([
        {
         path:'/addProduct',
         element:<AddProductForm></AddProductForm>,
+       
+      },
+       {
+        path:'/shop',
+        element:<Shop></Shop>
        
       }
     ],

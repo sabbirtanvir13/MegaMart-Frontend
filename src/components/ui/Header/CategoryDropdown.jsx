@@ -15,12 +15,12 @@ const CategoryDropdown = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative z-10">
       {/* BUTTON */}
       <button
         type="button"
         onClick={() => setOpen(prev => !prev)}
-        className="flex items-center gap-3 bg-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-600 transition"
+        className="flex items-center gap-3 bg-green-500 text-white px-6 py-3 rounded-full font-semibold cursor-pointer shadow-md hover:bg-green-600 transition"
       >
         <HiMenuAlt2 className="text-xl" />
         ALL CATEGORIES
@@ -38,8 +38,8 @@ const CategoryDropdown = () => {
           </div>
 
           {/* CATEGORY LIST */}
-          <ul className="py-2">
-            <CategoryItem icon={<FaAppleAlt />} label="Fruits & Vegetables" />
+          <ul className="py-2 ">
+            <CategoryItem cl icon={<FaAppleAlt />} label="Fruits & Vegetables" />
             <CategoryItem icon={<FaDrumstickBite />} label="Meats & Seafood" />
             <CategoryItem icon={<GiMilkCarton />} label="Breakfast & Dairy" />
             <CategoryItem icon={<MdLocalDrink />} label="Beverages" />

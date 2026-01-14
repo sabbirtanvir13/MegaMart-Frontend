@@ -40,7 +40,7 @@ const HeroSlider = () => {
         {slides.map(slide => (
           <SwiperSlide key={slide.id}>
             <div
-              className="h-[420px] md:h-[500px] bg-cover bg-center relative"
+              className="h-[420px] md:h-[550px]  bg-cover bg-center relative"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               {/* Overlay */}
