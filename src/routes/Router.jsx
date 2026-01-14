@@ -47,12 +47,16 @@ import Home from "../pages/home/Home";
 import Login from "../Auth/login/Login";
 import Register from "../Auth/register/Register";
 import Coverage from "../pages/Coverage/Coverage";
-import AddProductForm from "../Form/AddProductForm";
+
 import Shop from "../components/Shop/Shop";
+import DashboardLayout from "../layout/DashboardLayout";
+import AddProductForm from "../Form/AddProductForm";
+
+
 
 
 export const router = createBrowserRouter([
-  // ===== Main Website Layout =====
+  // ===== Main Layout =====
   {
     path: "/",
     Component: RootLayout,
@@ -65,15 +69,11 @@ export const router = createBrowserRouter([
 
        {
         path:'/coverage',
-        Component: Coverage,
+        element: <Coverage />,
         loader:()=>fetch('/servicesCenter.json').then(res=>res.json())
       },
 
-       {
-        path:'/addProduct',
-        element:<AddProductForm></AddProductForm>,
-       
-      },
+     
        {
         path:'/shop',
         element:<Shop></Shop>
@@ -82,19 +82,31 @@ export const router = createBrowserRouter([
     ],
   },
 
-  // ===== Auth Layout =====
+  //  Auth Layout //
   {
     path: "/",
     Component: AuthLayout,
     children: [
       {
         path: "login",
-        Component: Login,
+          element: <Login />
       },
       {
         path: "register",
-        Component: Register,
+           element: <Register />
       },
     ],
   },
+
+
+     // Dashboard Layout 
+ {
+  path: "/dashboard",
+  element: <DashboardLayout />,
+  children: [
+    { path: "add-product", element: <AddProductForm /> },
+  ],
+}
+
+     
 ]);

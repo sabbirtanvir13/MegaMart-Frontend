@@ -1,19 +1,20 @@
 
-import { 
-  TextField, 
-  Button, 
-  MenuItem, 
-  Switch, 
-  FormControlLabel, 
-  InputAdornment 
+import {
+  TextField,
+  Button,
+  MenuItem,
+  Switch,
+  FormControlLabel,
+  InputAdornment
 } from '@mui/material';
+import { ImageIcon } from 'lucide-react';
 import { MdCloudUpload } from 'react-icons/md';
 
 const AddProductForm = () => {
   return (
     <div className="max-w-2xl mx-auto my-10 bg-white p-8 rounded-xl shadow-lg border border-gray-100">
       <h2 className="text-2xl font-bold text-slate-800 mb-6 border-b pb-4">Add New Product</h2>
-      
+
       <form className="space-y-6">
         {/* Product Title */}
         <TextField
@@ -68,14 +69,26 @@ const AddProductForm = () => {
         </div>
 
         {/* Image URL/Upload */}
-        <TextField
+        {/* <TextField
           fullWidth
           label="Product Image URL"
           placeholder="https://example.com/image.png"
           InputProps={{
             endAdornment: <MdCloudUpload className="text-gray-400 text-xl" />,
           }}
-        />
+        /> */}
+
+        {/* Image Upload */}
+        <div className="mb-4 relative">
+          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#77df43]">
+            <ImageIcon />
+          </span>
+          <input
+            type="file"
+            className="w-full pl-12 pr-4 py-3 rounded-full bg-gray-50 shadow-inner text-gray-500 file:hidden"
+          />
+        </div>
+
 
         {/* Switches for Badges */}
         <div className="flex flex-wrap gap-6 bg-slate-50 p-4 rounded-lg">
@@ -95,11 +108,11 @@ const AddProductForm = () => {
 
         {/* Action Buttons */}
         <div className="flex gap-4 pt-4">
-          <Button 
-            variant="contained" 
+          <Button
+            variant="contained"
             fullWidth
-            sx={{ 
-              backgroundColor: '#2b3e9a', 
+            sx={{
+              backgroundColor: '#2b3e9a',
               padding: '12px',
               fontWeight: 'bold',
               textTransform: 'none',
@@ -108,11 +121,11 @@ const AddProductForm = () => {
           >
             Publish Product
           </Button>
-          
-          <Button 
-            variant="outlined" 
+
+          <Button
+            variant="outlined"
             fullWidth
-            sx={{ 
+            sx={{
               color: '#64748b',
               borderColor: '#cbd5e1',
               textTransform: 'none',
