@@ -176,7 +176,7 @@ const Header = () => {
                     <nav className="flex gap-6 text-sm font-medium">
                         <Link className="hover:text-green-600 " to="/">Home</Link>
                         <Link className="hover:text-green-600" to="/shop">Shop</Link>
-                        <Link className="hover:text-green-600" to="/meats">Meats & Seafood</Link>
+                        <Link className="hover:text-green-600" to="/meat-seafood">Meats & Seafood</Link>
                         <Link className="hover:text-green-600" to="/bakery">Bakery</Link>
                         <Link className="hover:text-green-600" to="/beverages">Beverages</Link>
                         <Link className="hover:text-green-600" to="/blog">Blog</Link>

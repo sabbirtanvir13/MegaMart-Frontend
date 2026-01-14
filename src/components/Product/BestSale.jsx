@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import LoadingSpinner from '../ui/LoadingSpinner/LoadingSpinner';
 
 const BestSale = () => {
   const { data: BestProducts = [], isLoading } = useQuery({
@@ -21,7 +22,7 @@ const BestSale = () => {
   });
 
   if (isLoading) {
-    return <p className="text-center py-10">Loading products...</p>;
+    return <p className="text-center py-10"><LoadingSpinner></LoadingSpinner></p>;
   }
 
   if (BestProducts.length === 0) {

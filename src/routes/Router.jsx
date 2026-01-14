@@ -51,6 +51,9 @@ import Coverage from "../pages/Coverage/Coverage";
 import Shop from "../components/Shop/Shop";
 import DashboardLayout from "../layout/DashboardLayout";
 import AddProductForm from "../Form/AddProductForm";
+import Bakery from "../components/Bekary/Bakery";
+import MeatSeafoodPage from "../components/MeatSeafoodPage/MeatSeafood";
+import MeatSeafood from "../components/MeatSeafoodPage/MeatSeafood";
 
 
 
@@ -78,6 +81,15 @@ export const router = createBrowserRouter([
         path:'/shop',
         element:<Shop></Shop>
        
+      },
+       {
+        path:'/bakery',
+        element:<Bakery></Bakery>
+       
+      },
+      {
+      path: "/meat-seafood",
+       element: <MeatSeafood />,
       }
     ],
   },
