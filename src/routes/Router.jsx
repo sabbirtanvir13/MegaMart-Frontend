@@ -54,6 +54,8 @@ import AddProductForm from "../Form/AddProductForm";
 import Bakery from "../components/Bekary/Bakery";
 import MeatSeafoodPage from "../components/MeatSeafoodPage/MeatSeafood";
 import MeatSeafood from "../components/MeatSeafoodPage/MeatSeafood";
+import BeveragesList from "../components/Beverages/Beverages";
+import Beverages from "../components/Beverages/Beverages";
 
 
 
@@ -90,7 +92,9 @@ export const router = createBrowserRouter([
       {
       path: "/meat-seafood",
        element: <MeatSeafood />,
-      }
+      },
+       { path: "/beverages",
+         element: <Beverages /> }
     ],
   },
 
